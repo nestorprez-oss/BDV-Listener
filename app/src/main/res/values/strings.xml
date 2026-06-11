@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BDV Listener</string>
+    <string name="config_title">Configuración</string>
+    <string name="history_title">Historial</string>
+
+    <string name="label_package_name">Package del banco</string>
+    <string name="hint_package_name">com.bancodevenezuela.bdvdigital</string>
+    <string name="label_backend_url">URL del backend</string>
+    <string name="hint_backend_url">http://192.168.1.100:8080/api/webhook</string>
+    <string name="label_auth_token">Token de autenticación (opcional)</string>
+    <string name="hint_auth_token">Bearer token aquí</string>
+    <string name="label_regex_monto">Regex para monto</string>
+    <string name="hint_regex_monto">(?:Bs\.?\\s*)?(?&lt;monto&gt;\\d{1,3}(?:\\.\\d{3})*(?:,\\d{2}))</string>
+    <string name="label_regex_ref">Regex para referencia</string>
+    <string name="hint_regex_ref">(?:numero de operacion|Ref:)\\s*(?&lt;ref&gt;\\d{10,12})</string>
+    <string name="btn_save">Guardar configuración</string>
+    <string name="btn_test_regex">Probar regex</string>
+    <string name="btn_test_notification">Simular notificación</string>
+    <string name="btn_open_config">Configurar Banco</string>
+    <string name="btn_open_history">Ver Historial</string>
+    <string name="btn_grant_permission">Conceder permiso</string>
+    <string name="btn_open_notification_settings">Abrir ajustes de notificaciones</string>
+
+    <string name="status_listener_active">Servicio activo</string>
+    <string name="status_listener_inactive">Servicio inactivo</string>
+    <string name="status_permission_granted">Permiso concedido</string>
+    <string name="status_permission_denied">Permiso denegado</string>
+    <string name="status_config_ok">Configuración lista</string>
+    <string name="status_config_missing">Configuración pendiente</string>
+    <string name="status_not_configured">Sin configurar</string>
+
+    <string name="welcome_title">Bienvenido a BDV Listener</string>
+    <string name="welcome_message">Esta app lee las notificaciones push de tu banco y envía los datos de transferencia a tu backend personal.&#10;&#10;1. Concede permiso de acceso a notificaciones&#10;2. Configura el package de tu banco y el backend&#10;3. Los datos se enviarán automáticamente</string>
+
+    <string name="label_test_text">Texto de notificación de prueba</string>
+    <string name="hint_test_text">Recibiste un PagomovilBDV por Bs.1.025,00 del 0412-2990703 Ref: 312438232670 en fecha 04-05-26 hora: 19:21.</string>
+    <string name="test_result_monto">Monto extraído: %s</string>
+    <string name="test_result_ref">Referencia extraída: %s</string>
+    <string name="test_result_none">No se pudo extraer ningún dato</string>
+
+    <string name="channel_name">BDV Listener</string>
+    <string name="channel_description">Notificaciones del servicio BDV Listener</string>
+    <string name="notification_service_running">BDV Listener está activo</string>
+
+    <string name="label_history_empty">No hay notificaciones capturadas aún</string>
+    <string name="label_status">Estado</string>
+    <string name="label_sent">Enviado</string>
+    <string name="label_failed">Fallido</string>
+    <string name="label_pending">Pendiente</string>
+
+    <string name="error_empty_package">El package del banco es obligatorio</string>
+    <string name="error_empty_url">La URL del backend es obligatoria</string>
+
+    <string name="simulated_notification">[SIMULADO] %s</string>
+</resources>
