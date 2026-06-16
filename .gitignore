@@ -10,3 +10,7 @@
 .cxx
 local.properties
 gradle/gradle-daemon-jvm.properties
+node_modules/
+dist/
+.env
+claves bdv monitor.txt
